@@ -1,0 +1,10 @@
+Rental Record for John Doe
+	Jaws	(HD)	2.0
+	Inception	(HD)	6.5
+	Parasite	(4K)	5.0
+	1917	(4K)	17.0
+	Spirited Away	(HD)	1.5
+	The Wizard of Oz	(HD)	7.5
+10% Premium Customer Discount	-3.95
+Amount owed is 35.55
+You earned 7 frequent renter points

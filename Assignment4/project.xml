@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <issue severity="trivial" state="open" type="feature">
+        <description>Drink a beer.</description>
+        <id>i1</id>
+        <name>Motivate project members</name>
+    </issue>
+    <issue severity="major" state="closed" type="bug">
+        <description>Fix networking bug A1234: Possible race conditions on login</description>
+        <id>i2</id>
+        <name>Fix A1234</name>
+    </issue>
+    <issue severity="major" state="open" type="feature">
+        <dependencies>i2</dependencies>
+        <description>Build a shiny login screen</description>
+        <id>i3</id>
+        <name>Login screen</name>
+    </issue>
+</project>

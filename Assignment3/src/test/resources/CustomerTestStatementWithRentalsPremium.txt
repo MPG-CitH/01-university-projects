@@ -1,0 +1,8 @@
+Rental Record for User1
+	Fast and Furious 1	(4K)	1.5
+	Fast and Furious 2	(4K)	3.0
+	Fast and Furious 3	(HD)	5.5
+	Fast and Furious 4	(HD)	16.0
+10% Premium Customer Discount	-2.6
+Amount owed is 23.4
+You earned 65 frequent renter points

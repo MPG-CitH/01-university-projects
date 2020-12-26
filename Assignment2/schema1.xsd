@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="project" type="project"/>
+
+  <xs:complexType name="project">
+    <xs:sequence>
+      <xs:element name="issue" type="issue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="milestone" type="milestone" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="issue">
+    <xs:sequence>
+      <xs:element name="dependencies" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="id" type="xs:ID"/>
+      <xs:element name="milestone" type="xs:IDREF" minOccurs="0"/>
+      <xs:element name="name" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="severity" type="severity" use="required"/>
+    <xs:attribute name="state" type="state" use="required"/>
+    <xs:attribute name="type" type="type" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="milestone">
+    <xs:sequence>
+      <xs:element name="id" type="xs:ID"/>
+      <xs:element name="due" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="severity">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="trivial"/>
+      <xs:enumeration value="minor"/>
+      <xs:enumeration value="major"/>
+      <xs:enumeration value="critical"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="state">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="open"/>
+      <xs:enumeration value="closed"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="bug"/>
+      <xs:enumeration value="feature"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <issue severity="trivial" state="open" type="feature">
+        <description>Drink a beer.</description>
+        <id>i1</id>
+        <milestone>m1</milestone>
+        <name>Motivate project members</name>
+    </issue>
+    <issue severity="major" state="closed" type="bug">
+        <description>Fix networking bug A1234: Possible race conditions on login</description>
+        <id>i2</id>
+        <milestone>m2</milestone>
+        <name>Fix A1234</name>
+    </issue>
+    <issue severity="major" state="open" type="feature">
+        <dependencies>i2</dependencies>
+        <description>Build a shiny login screen</description>
+        <id>i3</id>
+        <milestone>m2</milestone>
+        <name>Login screen</name>
+    </issue>
+    <milestone>
+        <id>m1</id>
+        <due>i1</due>
+        <name>Project Kickoff</name>
+    </milestone>
+    <milestone>
+        <id>m2</id>
+        <due>i2</due>
+        <due>i3</due>
+        <name>Release v0.1-beta</name>
+    </milestone>
+</project>

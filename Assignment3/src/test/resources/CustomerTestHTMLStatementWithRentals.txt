@@ -1,0 +1,7 @@
+<H1>Rentals for <EM>User1</EM></H1><P>
+Fast and Furious 1 (4K): 1.5<BR>
+Fast and Furious 2 (4K): 3.0<BR>
+Fast and Furious 3 (HD): 5.5<BR>
+Fast and Furious 4 (HD): 16.0<BR>
+<P>You owe <EM>26.0</EM><P>
+On this rental you earned <EM>65</EM> frequent renter points<P>
